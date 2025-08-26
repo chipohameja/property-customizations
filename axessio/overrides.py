@@ -1,5 +1,6 @@
 import frappe
 from erpnext_germany.erpnext_germany.doctype.business_letter.business_letter import BusinessLetter
+from erpnext.crm.doctype.lead.lead import Lead
 
 class CustomBusinessLetter(BusinessLetter):
 	def get_context(self):
@@ -13,3 +14,12 @@ class CustomBusinessLetter(BusinessLetter):
 			"reference": reference,
 			"doc": self
 		}
+	
+
+# class CustomLead(Lead):
+# 	def validate(self):
+# 		self.set_full_name()
+# 		self.set_lead_name()
+# 		self.set_title()
+# 		self.set_status()
+# 		self.validate_email_id()
