@@ -130,7 +130,8 @@ app_license = "mit"
 # Override standard doctype classes
 
 override_doctype_class = {
-	"Business Letter": "axessio.overrides.CustomBusinessLetter"
+	"Business Letter": "axessio.overrides.CustomBusinessLetter",
+    # "Lead": "axessio.overrides.CustomLead"
 }
 
 # Document Events
